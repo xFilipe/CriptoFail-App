@@ -1,6 +1,22 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
 	
 
+    <lightning:card>
+
+<div class="teste">
     Hello World!!
+
+
+    <h1 style="text-decoration: underline;">Teste</h1>
+
+</div>
+</lightning:card>
+    
+
+
+    
+ 
+
+
 
 </aura:component>

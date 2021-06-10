@@ -1,2 +1,10 @@
-.THIS {
+
+
+.THIS.teste {
+    background-color: rgb(166, 196, 196);
+    color: red;
+}
+
+.THIS.h1{
+    color: blue;
 }
