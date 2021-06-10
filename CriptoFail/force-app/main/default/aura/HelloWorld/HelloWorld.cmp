@@ -1,28 +1,37 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
-	
 
     
+<aura:attribute name="nome" type="String" default="Valor Padrão"/>  <!-- Defininvo a variável -->
 
-<div class="teste" style="background-color: rgb(166, 196, 196);height:90%;">
-    Hello World!!
+
+<div class="teste" style="background-color: rgb(166, 196, 196);height:90%;margin-left:20%;width:70%">
+
+    <lightning:input name="input1" label="Insira valor para atribuir à variável" value="{!v.nome}" />
+
+    <!--Atribuir valor a variável-->
+
+
+    <h1>
+     O valor padrão é: <span style="text-decoration: underline;color:brown"> {!v.nome} </span> <!--Chamando a variável onde "v." significa que eu quero uma variável que vem da view-->
+    </h1>
+
 
 
     <h1 style="text-decoration: underline;">Teste</h1>
 
-</div>
-<div  style="background-color: aqua;margin-top: 10%;">
+    </div>
+<div  style="background-color: aqua;margin-top: 5%;width:45%;">
     <h1>Another Test</h1>
 </div>
 
+
+
 <div>
+
 
     
 
-    <lightning:card>
-        <aura:set attribute="title">
-            <lightning:icon iconName="utility:connected_apps" size="small"/>
-<!-- {! v.title } -->           
-        </aura:set>
+    <lightning:card class="testando">      
         <aura:set attribute="footer">
             <lightning:badge label="Tag1"/>
             <lightning:badge label="Tag2"/>
@@ -35,6 +44,14 @@
 </div>
 
 
+
+<div  style="background-color: rgb(255, 196, 0);margin-top: 3%;width:45%;">
+    
+
+    
+
+
+</div>
     
  
 
