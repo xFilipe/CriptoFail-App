@@ -1,7 +1,7 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
 	
 
-    <lightning:card>
+    
 
 <div class="teste" style="background-color: rgb(166, 196, 196);height:90%;">
     Hello World!!
@@ -10,12 +10,29 @@
     <h1 style="text-decoration: underline;">Teste</h1>
 
 </div>
-<div style="margin-top: 10%;">
+<div  style="background-color: aqua;margin-top: 10%;">
     <h1>Another Test</h1>
 </div>
 
-</lightning:card>
+<div>
+
     
+
+    <lightning:card>
+        <aura:set attribute="title">
+            <lightning:icon iconName="utility:connected_apps" size="small"/>
+<!-- {! v.title } -->           
+        </aura:set>
+        <aura:set attribute="footer">
+            <lightning:badge label="Tag1"/>
+            <lightning:badge label="Tag2"/>
+            <lightning:badge label="Tag3"/>
+        </aura:set>
+        Card Body (custom component)
+    </lightning:card>
+
+
+</div>
 
 
     
