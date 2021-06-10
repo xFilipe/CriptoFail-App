@@ -3,7 +3,7 @@
 
     <lightning:card>
 
-<div class="teste">
+<div class="teste" style="background-color: rgb(166, 196, 196);">
     Hello World!!
 
 
