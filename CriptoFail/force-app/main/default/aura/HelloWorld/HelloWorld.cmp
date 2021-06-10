@@ -3,7 +3,7 @@
 
     <lightning:card>
 
-<div class="teste" style="background-color: rgb(166, 196, 196);width:50%;height:60%;">
+<div class="teste" style="background-color: rgb(166, 196, 196);height:90%;">
     Hello World!!
 
 
