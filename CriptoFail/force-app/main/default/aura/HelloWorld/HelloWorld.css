@@ -7,7 +7,9 @@
     font-size: 17px;
     color: black;
     background-color: rgb(251, 255, 0);
+    padding-top: 7%;
 }
+
 
 .THIS.content{
     margin-left: 20%;
@@ -17,4 +19,14 @@
     background-color: teal;
     color: red;
 
+}
+
+
+.THIS#div1{
+    background-color: red;
+}
+
+
+.THIS.teste{
+    background-color: red;
 }

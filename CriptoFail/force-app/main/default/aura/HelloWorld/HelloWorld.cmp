@@ -1,32 +1,24 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
 
+    <div class="container">
+        <h1> Teste 0</h1>    
 
+    <div class="teste" style="margin-left: 20%;margin-right: 20%;padding:20%;padding-top: 2%;">                
+    <lightning:card title="Mercado" class="content">
 
-    <lightning:card title="Mercado" class="container">
-        
-
-
-        <div class="content">
-
-            <h1> Teste 1</h1>
-
-            <div class="content">
-
-            <lightning:tabset class="novoteste">
-
-                <h1> Teste 2</h1>
+            <lightning:tabset>
                 <lightning:tab label="Compra" id="compra">
                     Compra
                 </lightning:tab>
                 <lightning:tab label="Venda" id="venda">
                     Venda
                 </lightning:tab>             
-            </lightning:tabset>
-
-            </div>
-     
-       
-        </div>
+            </lightning:tabset>            
+        
     </lightning:card>
+    </div>
+
+    </div>
+
 
 </aura:component>
