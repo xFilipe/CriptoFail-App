@@ -1,9 +1,19 @@
+.THIS{
+    color: white;
+}
+
 .THIS.testando{
 
-    background-color: violet;
+    color: white;
+    background-color: rgb(251, 255, 0);
 }
 
 
-.THIS.testando{
+.THIS#Compra{
     color:tomato;
+}
+
+
+.THIS#Venda{
+    color:teal;
 }
