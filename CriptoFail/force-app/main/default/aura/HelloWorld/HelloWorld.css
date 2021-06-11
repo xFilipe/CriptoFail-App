@@ -2,24 +2,19 @@
     color: white;
 }
 
-.THIS.testando{
+.THIS.container{
 
-    color: white;
-    background-color: rgb(165, 167, 58);
+    font-size: 19px;
+    color: black;
+    background-color: rgb(251, 255, 0);
 }
 
-
-.THIS#Compra{
-    color:tomato;
-}
-
-
-.THIS#Venda{
-    color:teal;
-}
-
-
-.THIS.novoteste{
-    color: red;
+.THIS.content{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding:20%;;
+    padding-top: 5%;
     background-color: teal;
+    color: red;
+
 }

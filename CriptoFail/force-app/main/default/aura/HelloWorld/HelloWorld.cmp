@@ -1,9 +1,18 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
 
-    <lightning:card title="Mercado" class="testando">
+
+
+    <lightning:card title="Mercado" class="container">
         
-        <div style="margin-left: 20%;margin-right: 20%;">
+
+
+        <div class="content">
+
+            <h1> Teste 1</h1>
+
             <lightning:tabset class="novoteste">
+
+                <h1> Teste 2</h1>
                 <lightning:tab label="Compra" id="compra">
                     Compra
                 </lightning:tab>
