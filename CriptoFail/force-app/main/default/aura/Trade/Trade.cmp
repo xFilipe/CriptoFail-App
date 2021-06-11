@@ -1,8 +1,7 @@
 
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
 
-
-    
+   
     <aura:attribute name="nome" type="String" default="Valor Padrão"/>  <!-- Defininvo a variável -->
 
 
@@ -16,44 +15,21 @@
         <h1>
          O valor padrão é: <span style="text-decoration: underline;color:brown"> {!v.nome} </span> <!--Chamando a variável onde "v." significa que eu quero uma variável que vem da view-->
         </h1>
-    
-    
-    
-        <h1 style="text-decoration: underline;">Teste</h1>
-    
-        </div>
-    <div  style="background-color: aqua;margin-top: 5%;width:45%;">
-        <h1>Another Test</h1>
-    </div>
-    
-    
-    
+      
+      
     <div>
-    
-    
-        
-    
         <lightning:card class="testando">      
             <aura:set attribute="footer">
                 <lightning:badge label="Tag1"/>
                 <lightning:badge label="Tag2"/>
                 <lightning:badge label="Tag3"/>
-            </aura:set>
-                
-      
-        
-        </lightning:card>
-    
-    
+            </aura:set>                  
+        </lightning:card>    
     </div>
     
     
     
-    <div  style="background-color: rgb(255, 196, 0);margin-top: 3%;width:45%;">
-        
-    
-        
-    
+   
     
     </div>
         

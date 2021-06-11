@@ -18,9 +18,7 @@
     
 
 <div>
-    <lightning:card class="content"> <!-- Removi o trecho  ->  title="Mercado"   -->
-
-        
+    <lightning:card class="content"> <!-- Removi o trecho  ->  title="Mercado"   -->        
         <div id="transacao" style="background-color:yellow;">
             <lightning:tabset>             
 
