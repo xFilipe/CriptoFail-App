@@ -1,24 +1,58 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
 
-    <div class="container">
-        <h1> Teste 0</h1>    
+ <div class="container">
 
-    <div class="teste" style="margin-left: 20%;margin-right: 20%;padding:20%;padding-top: 2%;">                
-    <lightning:card title="Mercado" class="content">
+<header>
 
-            <lightning:tabset>
+   <h1>Realizar Transação</h1>
+   
+   <hr class="separador"/>
+</header>
+
+
+<div class="content">
+
+<strong>
+   <p>REALIZAR COMPRA OU VENDA DE ATIVOS</p>   
+</strong>
+    
+
+<div>
+    <lightning:card class="content"> <!-- Removi o trecho  ->  title="Mercado"   -->
+
+        
+        <div id="transacao" style="background-color:yellow;">
+            <lightning:tabset>             
+
                 <lightning:tab label="Compra" id="compra">
                     Compra
                 </lightning:tab>
                 <lightning:tab label="Venda" id="venda">
                     Venda
-                </lightning:tab>             
+                </lightning:tab>            
+                
             </lightning:tabset>            
-        
-    </lightning:card>
-    </div>
+        </div>
 
-    </div>
+    </lightning:card>
+</div>
+
+</div>   
+
+<footer>
+
+   <strong>
+
+As operações realizadas são por sua conta e risco, não nos responsabilizamos pela sua <span id="burrice">burrice</span> perda de valores.
+
+   </strong>
+<hr class="separador"/>
+</footer>
+
+
+
+</div>
+
 
 
 </aura:component>

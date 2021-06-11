@@ -1,32 +1,48 @@
-.THIS{
-    color: white;
-}
-
 .THIS.container{
-
-    font-size: 17px;
+    text-align: center;
+    background-color: yellow;
     color: black;
-    background-color: rgb(251, 255, 0);
-    padding-top: 7%;
-}
+    width: 90%;
+    height: 90%;
+   }
+
+   .THIS header{
+    color: black;
 
 
-.THIS.content{
+   }
+
+   .THIS hr.separador{                  
+    width: 60%;    
+    border: 1px solid black;
     margin-left: 20%;
     margin-right: 20%;
-    padding:20%;;
-    padding-top: 5%;
-    background-color: teal;
-    color: red;
+    
+   }
 
-}
+   .THIS.content{
+    margin-top: 4%;    
+    padding: 3%;
+    
+   }
 
+   .THIS #transacao{
+    border: 3px solid black;    
+    border-radius: 15px 30px 0px 0px;
+    box-shadow: 7px 7px 19px black; 
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 3%;
+    
+    }
 
-.THIS#div1{
-    background-color: red;
-}
+    .THIS footer{
+    color: black;
+    margin-top: 3%;  
+    font-size: 13px;               
+   }
 
+   .THIS span#burrice{
+    text-decoration: line-through;
+   }
 
-.THIS.teste{
-    background-color: red;
-}
