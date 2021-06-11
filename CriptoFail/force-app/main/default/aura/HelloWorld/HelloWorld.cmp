@@ -2,13 +2,8 @@
 
  <div class="container">
 
-<header>
-
-   <h1>Realizar Transação</h1>
    
    <hr class="separador"/>
-</header>
-
 
 <div class="content">
 
@@ -17,7 +12,7 @@
 </strong>
     
 
-<div>
+<div style="background-color: yellow;">
     <lightning:card class="content"> <!-- Removi o trecho  ->  title="Mercado"   -->        
         <div id="transacao" style="background-color:yellow;">
             <lightning:tabset>             

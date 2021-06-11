@@ -6,25 +6,16 @@
     height: 90%;
    }
 
-   .THIS header{
-    color: black;
-
-
-   }
-
-   .THIS hr.separador{                  
-    width: 60%;        
+ 
+   .THIS hr.separador{
+    background-color: black;    
+    width: 60%;            
     margin-left: 20%;
     margin-right: 20%;
-    border: 1px solid black;
+    border: 2px solid black;
     
    }
 
-   .THIS.content{
-    margin-top: 4%;    
-    padding: 3%;
-    
-   }
 
    .THIS #transacao{
     border: 3px solid black;    
@@ -47,3 +38,7 @@
     text-decoration: line-through;
    }
 
+   .THIS article{
+    background-color: yellow; 
+    border: 1px solid yellow;
+   }
