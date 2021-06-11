@@ -3,7 +3,7 @@
     <lightning:card title="Mercado" class="testando">
         
         <div style="margin-left: 20%;margin-right: 20%;">
-            <lightning:tabset>
+            <lightning:tabset class="novoteste">
                 <lightning:tab label="Compra" id="compra">
                     Compra
                 </lightning:tab>
