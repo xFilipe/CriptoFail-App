@@ -1,0 +1,23 @@
+
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+
+
+    <lightning:card title="Mercado" class="testando">
+        
+  
+        
+            <lightning:tabset>
+                <lightning:tab label="Compra" id="compra">
+                    Compra
+                </lightning:tab>
+                <lightning:tab label="Venda" id="venda">
+                    Venda
+                </lightning:tab>             
+            </lightning:tabset>
+        
+        
+    
+    </lightning:card>
+
+
+</aura:component>	
