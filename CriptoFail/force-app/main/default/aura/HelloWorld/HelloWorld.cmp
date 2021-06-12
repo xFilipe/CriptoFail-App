@@ -1,50 +1,94 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
 
- <div class="container">
+    <aura:attribute name="nome" type="String" default="Valor Padrão"/>  <!-- Defininvo a variável -->
+    <aura:attribute name="quantidade" type="String" default="0"/>  <!-- Defininvo a variável -->
+    <aura:attribute name="precoCompra" type="Integer" default="0"/>  <!-- Defininvo a variável -->
+    <aura:attribute name="data" type="String" default="dd-mm-aaaa"/>  <!-- Defininvo a variável -->
 
-   
-   <hr class="separador"/>
-
-<div class="content">
-
-<strong>
-   <p>REALIZAR COMPRA OU VENDA DE ATIVOS</p>   
-</strong>
+<div style="background-color: yellow;"> <!-- Define a cor para o elemento -->
     
+    <h1 class="header">
+    COMPRA E VENDA DE ATIVOS
+    </h1>
+        
+    <hr class="separador"/>        
 
-<div style="background-color: yellow;">
-    <lightning:card class="content"> <!-- Removi o trecho  ->  title="Mercado"   -->        
+    <lightning:card class="content"> <!-- Removi o trecho  ->  title="Mercado"   -->   
+
         <div id="transacao" style="background-color:yellow;">
+
             <lightning:tabset>             
 
+            <div class="operacao">
                 <lightning:tab label="Compra" id="compra">
-                    Compra
+                    
+                    <div>     
+
+                        <table>
+                            <tr>
+                                <td class="campos">
+                                    <lightning:input name="input1" label="Preço de Comra:" value="{!v.precoCompra}" /> <!--Atribuir valor a variável-->
+                                </td>                                
+                                <td class="campos">
+                                    <lightning:input name="input1" label="Quantidade:" value="{!v.quantidade}" /> <!--Atribuir valor a variável-->
+                                </td>
+                                <td class="campos">
+                                    <lightning:input type="date" name="input5" label="Data da Execução:" required="true" value="{!v.data}" /> <!--Atribuir valor a variável-->
+                                </td>
+                            </tr>
+                        </table>               
+                        
+                        <br />
+                        
+                    
+                        <br />
+                        <br />
+                        <lightning:button variant="brand" label="Enviar" title="Enviar" onclick="{!c.handleClick}" /> <!--Botão -->                                       
+                    </div>
+                    <div class="resumo">
+                        <h1>
+                           <strong> Resumo </strong>
+                        </h1>
+                        <ul>
+                            <li>Quantidade: <span class="detalhes"> {!v.quantidade} </span></li>
+                            <li>Preço: <span class="detalhes"> {!v.precoCompra} </span></li>
+                            <li>Execução: <span class="detalhes"> {!v.data} </span></li>
+
+                        </ul>
+                    </div>
+
                 </lightning:tab>
+
+                </div>
+
                 <lightning:tab label="Venda" id="venda">
                     Venda
                 </lightning:tab>            
                 
-            </lightning:tabset>            
+            </lightning:tabset>    
+
+            <!-- Progress bar
+            <aura:handler name="render" value="{!this}" action="{!c.onRender}"/>
+            <aura:attribute name="progress" type="Integer" default="0"/>
+            <lightning:progressBar value="{!v.progress}"/>
+
+            -->
+
         </div>
 
     </lightning:card>
 </div>
 
-</div>   
 
-<footer>
-
-   <strong>
-
-As operações realizadas são por sua conta e risco, não nos responsabilizamos pela sua <span id="burrice">burrice</span> perda de valores.
-
-   </strong>
+<div style="background-color: yellow;text-align: center;font-size: 14px;padding-top:1%;color:black;">   
+    <p>        
+        As operações realizadas são por sua conta e risco, não nos responsabilizamos pela sua <span id="burrice">burrice</span> perda de valores.        
+    </p>
+   
 <hr class="separador"/>
-</footer>
-
-
-
 </div>
+
+
 
 
 

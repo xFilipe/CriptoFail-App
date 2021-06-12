@@ -1,44 +1,84 @@
-.THIS.container{
+.THIS .header{    
     text-align: center;
-    background-color: yellow;
-    color: black;
-    width: 90%;
-    height: 90%;
-   }
+    padding-top: 2%;
+    font-size: 23px;
+    text-decoration: 2px 2px black;
+    }
 
- 
+
    .THIS hr.separador{
     background-color: black;    
     width: 60%;            
     margin-left: 20%;
     margin-right: 20%;
-    border: 2px solid black;
-    
+    border: 2.5px solid black;    
    }
-
-
+   
    .THIS #transacao{
-    border: 3px solid black;    
-    border-radius: 15px 30px 0px 0px;
-    box-shadow: 7px 7px 19px black; 
+    padding: 1%;
+    text-align: center;
+    border: 2px solid black;    
+    border-radius: 15px 40px 0px 0px;
+    box-shadow: 7px 7px 36px black; 
     margin-left: 20%;
-    margin-right: 20%;
-    padding-bottom: 3%;
-    margin-bottom: 3%;
-    
+    margin-right: 20%;    
     }
-
-    .THIS footer{
-    color: black;
-    margin-top: 7%;  
-    font-size: 13px;               
-   }
-
+   
    .THIS span#burrice{
     text-decoration: line-through;
    }
 
    .THIS article{
-    background-color: yellow; 
-    border: 1px solid yellow;
+    text-align: center;
+    padding: 5%;
+    background-color: yellow;     
    }
+
+   /* ver isso aqui
+   .THIS .operacao{       
+       padding-right: 10%;
+
+   }
+   */
+
+   .THIS .operacao input{
+    text-align: center;
+    border: 1px solid black;    
+    background-color: rgba(255, 255, 0, 0.32);
+}
+
+
+   .THIS .resumo{        
+    text-align: left;
+    padding: 1%;    
+    font-size: 14px;
+    margin-left: 65%;    
+    margin-right: 1%;
+    color: black;
+    background-color: yellow;
+    border: 3px dotted black;    
+    border-radius: 25px;    
+   }
+
+/*.THIS.slds-tabs_default__content  slds-show*/
+.THIS.slds-tabs_default__content {
+    border: 2px solid black;
+}
+
+.THIS .resumo .detalhes{
+    border-radius: 40px;
+    text-decoration: underline;
+    color:yellow;
+    background-color: black;
+}
+.THIS .resumo h1{
+    font-size: 16px;    
+    text-decoration: underline;
+    text-align: center;
+}
+
+.THIS .campos{
+    border-bottom: 1px solid black;
+    width: 7%;
+
+}
