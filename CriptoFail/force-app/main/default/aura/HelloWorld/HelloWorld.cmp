@@ -5,7 +5,7 @@
     <aura:attribute name="precoCompra" type="Integer" default="0"/>  <!-- Defininvo a variável -->
     <aura:attribute name="data" type="String" default="dd-mm-aaaa"/>  <!-- Defininvo a variável -->
 
-<div style="background-color: yellow;"> <!-- Define a cor para o elemento -->
+<div style="background-color: yellow;"> <!--   Define a cor para o elemento   -->
     
     <h1 class="header">
     COMPRA E VENDA DE ATIVOS
@@ -13,7 +13,7 @@
         
     <hr class="separador"/>        
 
-    <lightning:card class="content"> <!-- Removi o trecho  ->  title="Mercado"   -->   
+    <lightning:card class="content"> <!-- Removi o trecho  -> '  title="Mercado"  ' -->   
 
         <div id="transacao" style="background-color:yellow;">
 
@@ -68,9 +68,12 @@
             </lightning:tabset>    
 
             <!-- Progress bar
+
+
             <aura:handler name="render" value="{!this}" action="{!c.onRender}"/>
             <aura:attribute name="progress" type="Integer" default="0"/>
             <lightning:progressBar value="{!v.progress}"/>
+
 
             -->
 
