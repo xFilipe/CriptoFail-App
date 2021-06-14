@@ -5,8 +5,16 @@
         alert(num1);
 
         component.set("v.nome", "novo valor mano")
-
     }
+    ,
+
+
+    handleChange : function (component, event, helper) {
+        console.log(event.getParam("checked"));   // JSON.stringify(event) pega um objeto populado e trnasofrma em uma string
+    }
+
+
+
 
 
     

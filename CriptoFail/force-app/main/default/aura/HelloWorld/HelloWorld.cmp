@@ -4,6 +4,7 @@
     <aura:attribute name="quantidade" type="String" default="0"/>  <!-- Defininvo a variável -->
     <aura:attribute name="precoCompra" type="Integer" default="0"/>  <!-- Defininvo a variável -->
     <aura:attribute name="data" type="String" default="dd-mm-aaaa"/>  <!-- Defininvo a variável -->
+    <aura:attribute name="opMercado" type="boolean" default="false"/>  <!-- Defininvo a variável -->
 
 <div style="background-color: yellow;"> <!--   Define a cor para o elemento   -->
     
@@ -29,19 +30,28 @@
                         <lightning:messages />
                         
                         
-                        <lightning:inputField fieldName="OperacaoMercado__c" />                        
-                        <lightning:inputField fieldName="Quantidade__c" />         
-                        <lightning:inputField fieldName="Preco__c" />   
+                        <lightning:inputField fieldName="OperacaoMercado__c"  value="{!v.opMercado}" onchange="{!c.handleChange}"/>          
+
+                        <aura:if isTrue="{!v.opMercado}">
+                            <lightning:inputField fieldName="Preco__c" />                               
+                      </aura:if>                    
+                           
+                        
+
+
+                      <lightning:inputField fieldName="Quantidade__c" />
                         <lightning:inputField fieldName="Total__c" />   
-                              
+                        <lightning:inputField fieldName="DataExecucao__c" />   
+
                         </lightning:recordEditForm>
                                     
                         
+                        <lightning:button type="submit" name="Submit" label="Eviar" title="Enviar" onclick="{!c.handleClick}" /> <!--Botão -->                                       
                         <br />              
                         <br />
                         <br />
                         
-                        <lightning:button variant="brand" label="Enviar" title="Enviar" onclick="{!c.handleClick}" /> <!--Botão -->                                       
+                        
                     </div>
                     <div class="resumo">
                         <h1>
