@@ -4,7 +4,7 @@
     <aura:attribute name="quantidade" type="String" default="0"/>  <!-- Defininvo a variável -->
     <aura:attribute name="precoCompra" type="Integer" default="0"/>  <!-- Defininvo a variável -->
     <aura:attribute name="data" type="String" default="dd-mm-aaaa"/>  <!-- Defininvo a variável -->
-    <aura:attribute name="opMercado" type="boolean" default="false"/>  <!-- Defininvo a variável -->
+    <aura:attribute name="opMercado" type="Boolean" default="true"/>  <!-- Defininvo a variável -->
 
 <div style="background-color: yellow;"> <!--   Define a cor para o elemento   -->
     
@@ -24,29 +24,25 @@
                 <lightning:tab label="Compra" id="compra">                    
                     <div>     
 
+                        <lightning:recordEditForm objectApiName="Ordem__c" onsubmit="{!c.handleOrder}">
 
-                        <lightning:recordEditForm objectApiName="Ordem__c"
-                        onsubmit="{!c.handleSubmit}">
-                        <lightning:messages />
+                            <lightning:messages />                       
                         
-                        
-                        <lightning:inputField fieldName="OperacaoMercado__c"  value="{!v.opMercado}" onchange="{!c.handleChange}"/>          
+                            <lightning:inputField fieldName="OperacaoMercado__c" onchange="{!c.handleChange}"/>  
+                            <lightning:inputField fieldName="Quantidade__c" />        
 
-                        <aura:if isTrue="{!v.opMercado}">
-                            <lightning:inputField fieldName="Preco__c" />                               
-                      </aura:if>                    
-                           
-                        
+                            <aura:if isTrue="{!v.opMercado}">                                
+                                <lightning:inputField fieldName="Preco__c" />                               
+                            </aura:if>               
 
+                            <lightning:inputField fieldName="Total__c" />   
 
-                      <lightning:inputField fieldName="Quantidade__c" />
-                        <lightning:inputField fieldName="Total__c" />   
-                        <lightning:inputField fieldName="DataExecucao__c" />   
+                            <lightning:button type="submit" name="Submit" label="Enviar" /> <!--Botão -->                                                               
 
                         </lightning:recordEditForm>
                                     
                         
-                        <lightning:button type="submit" name="Submit" label="Eviar" title="Enviar" onclick="{!c.handleClick}" /> <!--Botão -->                                       
+                        
                         <br />              
                         <br />
                         <br />
