@@ -42,8 +42,7 @@
 
    .THIS .operacao input{
     text-align: center;
-    border: 1px solid black;    
-    background-color: rgba(255, 255, 0, 0.32);
+    border: 1px solid black;        
 }
 
 
@@ -66,7 +65,7 @@
 .THIS .resumo .detalhes{
     border-radius: 40px;
     text-decoration: underline;
-    color:yellow;
+    color:white;
     background-color: black;
 }
 .THIS .resumo h1{
