@@ -20,29 +20,24 @@
             <lightning:tabset>             
 
             <div class="operacao">
-                <lightning:tab label="Compra" id="compra">
-                    
+                <lightning:tab label="Compra" id="compra">                    
                     <div>     
 
-                        <table>
-                            <tr>
-                                <td class="campos">
-                                    <lightning:input name="input1" label="Preço de Comra:" value="{!v.precoCompra}" /> <!--Atribuir valor a variável-->
-                                </td>                                
-                                <td class="campos">
-                                    <lightning:input name="input1" label="Quantidade:" value="{!v.quantidade}" /> <!--Atribuir valor a variável-->
-                                </td>
-                                <td class="campos">
-                                    <lightning:input type="date" name="input5" label="Data da Execução:" required="true" value="{!v.data}" /> <!--Atribuir valor a variável-->
-                                </td>
-                            </tr>
-                        </table>               
+
+                        <lightning:recordEditForm objectApiName="Ordem__c"
+                        onsubmit="{!c.handleSubmit}">
+                        <lightning:messages />
                         
+                        <lightning:inputField fieldName="Mercado__c" />         
+                        <lightning:inputField fieldName="OperacaoMercado__c" />                        
+                        
+                        </lightning:recordEditForm>
+                                    
+                        
+                        <br />              
+                        <br />
                         <br />
                         
-                    
-                        <br />
-                        <br />
                         <lightning:button variant="brand" label="Enviar" title="Enviar" onclick="{!c.handleClick}" /> <!--Botão -->                                       
                     </div>
                     <div class="resumo">
