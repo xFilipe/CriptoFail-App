@@ -28,9 +28,12 @@
                         onsubmit="{!c.handleSubmit}">
                         <lightning:messages />
                         
-                        <lightning:inputField fieldName="Mercado__c" />         
-                        <lightning:inputField fieldName="OperacaoMercado__c" />                        
                         
+                        <lightning:inputField fieldName="OperacaoMercado__c" />                        
+                        <lightning:inputField fieldName="Quantidade__c" />         
+                        <lightning:inputField fieldName="Preco__c" />   
+                        <lightning:inputField fieldName="Total__c" />   
+                              
                         </lightning:recordEditForm>
                                     
                         
