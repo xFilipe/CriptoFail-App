@@ -6,17 +6,17 @@
     <aura:attribute name="data" type="String" default="dd-mm-aaaa"/>  <!-- Defininvo a variável -->
     <aura:attribute name="opMercado" type="Boolean" default="true"/>  <!-- Defininvo a variável -->
 
-<div style="background-color: yellow;"> <!--   Define a cor para o elemento   -->
+<div style="background-color: #00808036;"> <!--   Define a cor para o elemento   -->
     
     <h1 class="header">
-    COMPRA E VENDA DE ATIVOS
+    COMPRA E VENDA DE ATIVOSteste
     </h1>
         
     <hr class="separador"/>        
 
     <lightning:card class="content"> <!-- Removi o trecho  -> '  title="Mercado"  ' -->   
 
-        <div id="transacao" style="background-color:yellow;">
+        <div id="transacao" style="background-color:#00808036;">
 
             <lightning:tabset>             
 
