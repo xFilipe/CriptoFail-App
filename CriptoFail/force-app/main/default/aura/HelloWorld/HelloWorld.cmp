@@ -1,10 +1,10 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
 
     <aura:attribute name="nome" type="String" default="Valor Padrão"/>  <!-- Defininvo a variável -->
-    <aura:attribute name="quantidade" type="String" default="0"/>  <!-- Defininvo a variável -->
-    <aura:attribute name="precoCompra" type="Integer" default="0"/>  <!-- Defininvo a variável -->
-    <aura:attribute name="data" type="String" default="dd-mm-aaaa"/>  <!-- Defininvo a variável -->
-    <aura:attribute name="opMercado" type="Boolean" default="true"/>  <!-- Defininvo a variável -->
+    <aura:attribute name="quantidade" type="String" default="0"/>       <!-- Defininvo a variável -->
+    <aura:attribute name="precoCompra" type="Integer" default="0"/>     <!-- Defininvo a variável -->
+    <aura:attribute name="data" type="String" default="dd-mm-aaaa"/>    <!-- Defininvo a variável -->
+    <aura:attribute name="opMercado" type="Boolean" default="true"/>    <!-- Defininvo a variável -->
 
 <div style="background-color: #00808036;"> <!--   Define a cor para o elemento   -->
     
@@ -87,7 +87,7 @@
 </div>
 
 
-<div style="background-color: yellow;text-align: center;font-size: 14px;padding-top:1%;color:black;">   
+<div style="background-color: #00808036;text-align: center;font-size: 14px;padding-top:1%;color:black;">   
     <p>        
         As operações realizadas são por sua conta e risco, não nos responsabilizamos pela sua <span id="burrice">burrice</span> perda de valores.        
     </p>
