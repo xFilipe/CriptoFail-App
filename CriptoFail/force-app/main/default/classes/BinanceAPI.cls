@@ -21,17 +21,22 @@ public  class BinanceAPI {
         request.setMethod('GET');
         HttpResponse response = http.send(request);
         if(response.getStatusCode() == 200){
+            system.debug(response.getBody());
+            SymbolPrice sp = (SymbolPrice)JSON.deserialize(response.getBody(), SymbolPrice.class);
+            return sp.price;
 
         } else{
 
             return 'Erro ao acessar a API da Binance';
-        }
+        }    
 
-        
-
-        return pair;
       
     }
  
 
+    private Class SymbolPrice{
+        String symbol;
+        String price;
+
     }
+}
