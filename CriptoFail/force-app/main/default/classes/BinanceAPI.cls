@@ -1,6 +1,7 @@
 public  class BinanceAPI {
 
     // with sharing - Usando as configurações  de compartilhamenti /  without sharing - sem usar as configurçações de compartilhamento  
+    // ao não definir, o padrão é ser with sharing
     
     @AuraEnabled
     public static string getPrice(String mercadoId){
