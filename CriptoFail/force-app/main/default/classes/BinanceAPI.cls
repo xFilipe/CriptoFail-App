@@ -17,8 +17,15 @@ public  class BinanceAPI {
 
         Http http = new Http();
         HttpRequest request = new HttpRequest();
-        request.setEndpoint('https://api.binance.com/api/v3/ticker/price?symbol=');
+        request.setEndpoint('https://api.binance.com/api/v3/ticker/price?symbol=' + pair);
         request.setMethod('GET');
+        HttpResponse response = http.send(request);
+        if(response.getStatusCode() == 200){
+
+        } else{
+
+            return 'Erro ao acessar a API da Binance';
+        }
 
         
 
