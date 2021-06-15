@@ -29,7 +29,7 @@
             if(state == "SUCCESS"){
                 console.log(response.getReturnVale());
             }            else{
-                console.log("Erro}: " + response.getError());
+                console.log("Erro}: " + JSON.stringify(response.getError()));
             }
 
 

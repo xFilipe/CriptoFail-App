@@ -7,11 +7,11 @@ public  class BinanceAPI {
   
 
         Marcado__c mercado = [SELECT Id, MoedaPrimaria__c, MoedaSecundaria__c 
-                                FROM Marcado__c
+                                FROM marcado__c
                                 WHERE Id = :mercadoId];
 
 
-        String pair = marcado.MoedaPrimaria__c + marcado.MoedaSecundaria__c;
+        String pair = mercado.MoedaPrimaria__c + mercado.MoedaSecundaria__c;
         
         pair = pair.replace('USD', 'USDT');
         
