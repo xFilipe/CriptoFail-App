@@ -4,9 +4,17 @@
     <aura:attribute name="quantidade" type="String" default="0"/>       <!-- Defininvo a variável -->
     <aura:attribute name="precoCompra" type="Integer" default="0"/>     <!-- Defininvo a variável -->
     <aura:attribute name="data" type="String" default="dd-mm-aaaa"/>    <!-- Defininvo a variável -->
-    <aura:attribute name="opMercado" type="Boolean" default="true"/>    <!-- Defininvo a variável -->
+    <aura:attribute name="opMercado" type="Boolean" default="true"/>    <!-- Defininvo a variável -->   
     <aura:attribute name="recordId" type="String"/>    <!-- Defininvo a variável -->
 
+    <!--  
+    
+        <aura:handler  name="init" value="{!this}" action="{!c.retrievePrice}" />
+
+    -->
+
+
+    
 <div> <!--   Define a cor para o elemento   -->
     
     <h1 class="header">

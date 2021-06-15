@@ -28,6 +28,7 @@
             
             if(state == "SUCCESS"){
                 console.log(response.getReturnVale());
+                alert('o preco atual é' + response.getReturnVale());
             }            else{
                 console.log("Erro}: " + JSON.stringify(response.getError()));
             }
