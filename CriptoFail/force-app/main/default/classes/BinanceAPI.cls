@@ -14,6 +14,12 @@ public  class BinanceAPI {
         String pair = mercado.MoedaPrimaria__c + mercado.MoedaSecundaria__c;
         
         pair = pair.replace('USD', 'USDT');
+
+        Http http = new Http();
+        HttpRequest request = new HttpRequest();
+        request.setEndpoint('https://api.binance.com/api/v3/ticker/price?symbol=');
+        request.setMethod('GET');
+
         
 
         return pair;
