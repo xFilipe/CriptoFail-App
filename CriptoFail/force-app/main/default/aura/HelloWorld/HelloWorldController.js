@@ -13,6 +13,33 @@
         console.log(event.getParam("checked"));   // JSON.stringify(event) pega um objeto populado e trnasofrma em uma string
     }
 
+    ,
+
+    handleOrder : function (component, event, helper) {
+        var action = component.get("c.getPrice");
+        action.setParamns({
+            "currencyPair"  : "UTCUSDT"
+        });
+
+
+        // See better
+        action.setCallback(this, function(response){
+            var state = response.getState();
+            
+            if(state == "SUCCESS"){
+                console.log(response.getReturnVale());
+            }            else{
+                console.log("Erro}: " + response.getError());
+            }
+
+
+        })
+
+
+
+        $A.enqueueAction(action);
+        
+    }
 
 
 

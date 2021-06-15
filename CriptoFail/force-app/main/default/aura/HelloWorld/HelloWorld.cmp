@@ -1,10 +1,11 @@
-<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="BinanceAPI">
 
     <aura:attribute name="nome" type="String" default="Valor Padrão"/>  <!-- Defininvo a variável -->
     <aura:attribute name="quantidade" type="String" default="0"/>       <!-- Defininvo a variável -->
     <aura:attribute name="precoCompra" type="Integer" default="0"/>     <!-- Defininvo a variável -->
     <aura:attribute name="data" type="String" default="dd-mm-aaaa"/>    <!-- Defininvo a variável -->
     <aura:attribute name="opMercado" type="Boolean" default="true"/>    <!-- Defininvo a variável -->
+    <aura:attribute name="recordId" type="String"/>    <!-- Defininvo a variável -->
 
 <div> <!--   Define a cor para o elemento   -->
     
